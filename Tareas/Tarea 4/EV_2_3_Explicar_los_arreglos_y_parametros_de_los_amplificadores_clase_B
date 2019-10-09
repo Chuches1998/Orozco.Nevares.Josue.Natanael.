@@ -1,0 +1,15 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+\title{\textbf{Sistemas electronicos de interfaz \\ Tarea 3 \\ EV 2.3. Explicar los arreglos y parametros de los amplificadores clase B}}
+
+\maketitle
+
+\end{document}
