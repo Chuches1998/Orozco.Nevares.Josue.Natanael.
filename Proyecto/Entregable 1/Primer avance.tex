@@ -1,76 +1,130 @@
 \documentclass[12pt,a4paper]{report}
-\usepackage[latin1]{inputenc}
-\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
 \usepackage{graphicx}
-\usepackage{kpfonts}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
-\author{Bueno Gomez Jorge Heriberto, Briano Garcia Angel Eraclio, Orozco Nevares Josue Natanahel, Alvarez Hernandez Edwin David, Arce Montoya Jonatha,}
-\title{Universidad Politecnica de la Zona Metropolitana de Guadalajara\\
-Primer avance de proyecto}
+
 \begin{document}
-\section{Objetivo general}
-Presentar una propuesta para el mejoramiento de la linea de produccion de produccion de envasado, mejorar sustancialmente la eficiencia de una linea de envasado de cerveza de manera exacta, sin que ello conlleve un coste anadido y en un tiempo reducido.
-\section{Objetivos especificos:}
-Plantear una solucion para el llenado exacto en una linea de produccion
-Disenar una linea eficiente con materiales de bajo costo
-Estudiar los tiempos de llenado y su produccion 
-Determinar los costos de una linea de llenado 
-Conocer los datos de costos para la compra de dichos materiales
-Verificar la lista de materiales a necesitar
-Describir el proceso de llenado que se llevara a cabo
-Aumentar la velocidad y eficiencia de los procesos de llenado
-Definir un sistema de alarma o errores durante el proceso de llenado
-Elaborar la programacion en el lenguaje C++ para la automatizacion de la linea 
-Formular un plan de seguridad en caso de error
-Automatizar un sistema de llenado
-Analizar el proceso de la linea de llenado
-Evaluar los tiempos y produccion de la linea 
-Proponer una solucion para optimizar el sistema de llenado y taponado de botellas
-Mejorar la seguridad de la produccion
-Corroborar que todo funcione como deberia
-\subsection{Titulo}
-Titulo del proyecto
+\title{\textbf{Sistemas electronicos de interfaz\\Primer avance de proyecto\\P.I.S.T.O.}}
+\author{Alvarez Hernandez Edwin David 18311619\\Arce Montaya Jonathan 18311603\\Briano Garcìa Angel Eraclio 18311625\\Bueno Gòmez Jorge Heriberto 18312259\\Cruz Cervantes Oscar 18311638\\Orozco Nevares Josue Natanael 18311797}
+\date{9 de Octubre del 2019}
+
+\begin{figure}
+\centering
+\includegraphics[width=10cm]{UPCDLZMDG5783-logo.png} 
+\end{figure}
+\maketitle
+
+
+\section{Titulo}
+
 P.I.S.T.O. Siguiendo las siglas de nuestro proyecto serian las siguientes:\\
 Portador\\
 Inteligente\\
 Servicial para\\
 Tomadores\\
 Organizados\\
-\subsection{Delimitacion}
-Las delimitaciones del proyecto se consideraron unicamente 3 y son las siguientes:\\
-1- El proyecto este programado adecuadamente para su funcionamiento ademas de su correcta construccion.\\
-2- Llenar adecuadamente los contenedores de los usuarios que utilicen el P.I.S.T.O. a la medida que el aparato les pueda ofrecer y les otorgue la mayor satisfaccion.\\
-3- Economizar en el tema de los recursos al momento de su construccion.
+
+\subsection{Problematica}
+La problematica es que es muy cansado estar preparando las bebidas alcoholicas, ya que te toma mucho tiempo el estar sirviendo los hielos, el alcohol y el refresco, y mas si ya tienes unas copas de mas se complica mas.
+Ya que a muchos de nuestros compañeros les ocurre esto fue que decidimos el implementar este mecanismo para evitar el problema planteado.
+
 \section{Cual es el problema a resolver?}
 Al realizar la investigacion se determina el problema a resolver, el cual es hacer una distribucion casi perfecta de alcohol en bebidas preparadas (alcoholicas).\\
 En la recoleccion de informacion y evidencias notamos que el alcohol se desperdicia en pequenas proporciones que al pasar el tiempo en el evento es una perdida de producto y de dinero.\\
-Las razones por la que sucede son diversas, descuidos, vasos con demasiado alcohol y por lo tanto lo dejan de beber o lo tiran, caidas, etc.\\
-El problema por el cual nos vamos a inclinar a resolver sera:\\
-     El suministro adecuado en cada bebida preparada.\\
-     El control y proteccion de las bebidas alcoholicas (para evitar accidentes).\\
-    Un servicio comodo y sencillo de utilizar.\\
-    Rapidez en el servicio.\\
-En una posible solucion proponemos una maquina automatizada que se encargue de preparar tu bebida alcoholica.
+Las razones por la que sucede son diversas, descuidos, vasos con demasiado alcohol y por lo tanto lo dejan de beber o lo tiran, caidas, etc\\El problema por el cual nos vamos a inclinar a resolver sera:\\El suministro adecuado en cada bebida preparada.\\El control y proteccion de las bebidas alcoholicas (para evitar accidentes).\\Un servicio comodo y sencillo de utilizar.\\Rapidez en el servicio.
 
-\section{Objetivos del Proyecto (Como llegar al resultado?)}
-En primer lugar, tenemos que plantear un problema para darle una solucion y los integrantes del equipo tenemos un gusto en comun (bebidas alcoholicas). Planteamos una maquina de llenado de alcohol automatizada para poner en practica nuestros nuevos conocimientos que estamos desarrollando en clase.
-Surgiendo la idea tenemos que investigar los materiales que serán requeridos y hacer una cotizacion para poder empezar con el ahorro de fondos.
-Una vez consultado los materiales necesarios procederemos a aplicar nuestros conocimientos tecnicos de electronica y programacion para estructurar un diseno funcional y facil de utilizar, así como establecer un sistema confiable con la menor probabilidad de errores.
-Habiendo terminado con el diseno procederemos a empezar el proceso de ensamblado, en este punto empezaremos un sistema de prueba y error para mejorar fallas que nos puedan salir en el proceso, de esta forma podremos optimizar nuestra maquina automatizada.
-Al concluir con el ensamblado solo nos resta mejorar detalles y pequenos errores que puedan salir en un uso cotidiano que para ello lo tendremos a prueba en reuniones del equipo haciendo uso de nuestra maquina automatizada.
 
-\section{Esquema matriz}
+\section{Objetivo general}
+Proponer una propuesta para el mejoramiento de la linea de produccion de produccion de envasado, evaluar sustancialmente la eficiencia de una linea de envasado de bebidas alcoholicas de manera exacta, sin que ello conlleve un coste añadido y en un tiempo reducido.
 
-\includegraphics[scale=1]{Esquema de matriz.png} 
+\section{Objetivos especificos:}
+1. Proponer ideas para llevar acabo el proyecto\\2. Diseñar el boceto para ver que necesitamos\\3. Analizar los compotentes que necesitamos.\\4. Comprar los componentes.\\5. Elaborar el proyecto.\\6. Elaborar el programar del plc.\\7. Determinar las pruebas correspondientes.\\8. Analizar si hubo algun error.\\9. Verificar los errores\\10.Dar a conocer el proyecto en la fecha establecida.
+
+\section{Justificacion}
+Este proyecto es realizado por la necesidad de facilitar y mejorar procesos de llenado con una mayor precisión, velocidad, y un aumento de la producción, además de reducir los accidentes, perdidas y costos.
+
+\subsection{Delimitacion}
+1- El proyecto este programado adecuadamente para su funcionamiento ademas de su correcta construccion.\\
+2- Llenar adecuadamente los contenedores de los usuarios que utilicen el P.I.S.T.O. a la medida que el aparato les pueda ofrecer y les otorgue la mayor satisfaccion.\\
+3- Economizar en el tema de los recursos al momento de su construccion.
+solucion proponemos una maquina automatizada que se encargue de preparar tu bebida alcoholica.
 
 \section{Costos}
+\includegraphics[width=16cm]{Costos.png}
 
-\includegraphics[scale=1]{Costos.png} 
+\section{Matriz de roles}
+\begin{tabular}{|c|c|}
+\hline 
+Signo  & Leyenda  \\ 
+\hline 
+P & Responsabilidad \\ 
+\hline 
+C & colabora \\ 
+\hline 
+I & Suministra información a los demás  \\ 
+\hline 
+NJ & Josué Natanael Orozco Nevares y jonathan Arce Montoya  \\ 
+\hline 
+EO & Edwin David Álvarez Hernández y Osccar Cruz Cervantes  \\ 
+\hline 
+BL & Ángel Eraclio Briano García y Lisbeth Martínez Velásquez \\ 
+\hline 
+\end{tabular} 
 
-\section{Diagrama}
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Actividades  & NJ & EO & BL & Fecha  \\ 
+\hline 
+Título del proyecto  & P & I C & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Planteamiento del problema  & P & I C & C I & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Formular el problema  & C & P I & C I & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Objetivo general del proyecto  & P & I C & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Objetivo del proyecto  & C & P I & I C  & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Justificación  & C & P I & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Delimitación & P & I C & I C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Matriz de posibles costos de materiales  & C & I P  & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Matriz de roles  & C & I & P & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Diagrama de Gantt  & C & I & P & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Explicación de la aportación de cada materia  & P & I C & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Desarrollo del proyecto  & P & I & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Bibliografías  & P C & I & C & del 16 al 20 de Sep. 2019 \\ 
+\hline 
+Total P & 7 & 4 & 2 & - \\ 
+\hline 
+Total C & 7 & 5 & 11 & - \\ 
+\hline 
+Total I & - & 13 & 4 & - \\ 
+\hline 
+\end{tabular}
 
-\includegraphics[scale=1]{Diagrama.png} 
+\section{Diagrama de Gantt}
+\includegraphics[width=18cm]{Diagrama.png}
+\newpage
+
 \section{Materias relacionadas}
-\includegraphics[scale=1]{Materias.png} \\
-\includegraphics[scale=1]{Materias 1.png} 
+\includegraphics[width=16cm]{materias 2.png}  
+\includegraphics[width=16cm]{Materias.png}
+\newpage
+\includegraphics[width=16cm]{Materias1.png} 
+
+\bibliographystyle{apalike}
+\bibliography{biblio}
+
+
 \end{document}

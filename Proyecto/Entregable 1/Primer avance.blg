@@ -1,0 +1,64 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: Primer avance.aux
+The style file: apalike.bst
+Illegal, another \bibstyle command---line 20 of file Primer avance.aux
+ : \bibstyle
+ :          {apalike}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 21 of file Primer avance.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+Illegal, another \bibstyle command---line 26 of file Primer avance.aux
+ : \bibstyle
+ :          {apalike}
+I'm skipping whatever remains of this command
+Illegal, another \bibdata command---line 27 of file Primer avance.aux
+ : \bibdata
+ :         {biblio}
+I'm skipping whatever remains of this command
+Database file #1: biblio.bib
+Warning--empty journal in manjarr2010
+You've used 3 entries,
+            1935 wiz_defined-function locations,
+            487 strings with 4398 characters,
+and the built_in function-call counts, 966 in all, are:
+= -- 90
+> -- 48
+< -- 1
++ -- 16
+- -- 16
+* -- 74
+:= -- 193
+add.period$ -- 8
+call.type$ -- 3
+change.case$ -- 25
+chr.to.int$ -- 3
+cite$ -- 4
+duplicate$ -- 35
+empty$ -- 55
+format.name$ -- 19
+if$ -- 173
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 1
+newline$ -- 17
+num.names$ -- 9
+pop$ -- 24
+preamble$ -- 1
+purify$ -- 23
+quote$ -- 0
+skip$ -- 28
+stack$ -- 0
+substring$ -- 36
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 18
+warning$ -- 1
+while$ -- 6
+width$ -- 0
+write$ -- 38
+(There were 4 error messages)
