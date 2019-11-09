@@ -1,0 +1,203 @@
+
+**** 10/25/19 13:31:50 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Amp-Op- no inverso"  [ E:\PRACTICA SCR-TRIAC\Practica-PSpiceFiles\SCHEMATIC1\Amp-Op- no inverso.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Amp-Op- no inverso.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10m 0 50u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRACTICA
+X_U1         0 N01395 N02183 N02217 N01638 LM741
+R_R1         N01563 N01395  1k TC=0,0 
+R_R2         N01395 N01638  2.2k TC=0,0 
+V_V3         N02217 0 DC -15  
+V_V4         N02183 0 DC 15  
+V_V5         N01563 0  AC 0
++SIN 0 250m 1k 0 0 0
+X_U2         N02970 N03399 N03126 N03140 N02986 LM741
+V_V6         N02970 0  
++SIN 0 250m 1k 0 0 0
+R_R3         N03399 N02986  2.2k TC=0,0 
+R_R4         0 N03399  1k TC=0,0 
+V_V7         N03140 0 DC -15  
+V_V8         N03126 0 DC 15  
+
+**** RESUMING "Amp-Op- no inverso.cir" ****
+.END
+
+**** 10/25/19 13:31:50 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Amp-Op- no inverso"  [ E:\PRACTICA SCR-TRIAC\Practica-PSpiceFiles\SCHEMATIC1\Amp-Op- no inverso.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.dx X_U1.x_lm741.dy X_U2.x_lm741.dx X_U2.x_lm741.dy 
+          IS  800.000000E-18  800.000000E-18  800.000000E-18  800.000000E-18 
+          RS    1               1.000000E-03    1               1.000000E-03 
+         CJO                   10.000000E-12                   10.000000E-12 
+
+
+**** 10/25/19 13:31:50 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Amp-Op- no inverso"  [ E:\PRACTICA SCR-TRIAC\Practica-PSpiceFiles\SCHEMATIC1\Amp-Op- no inverso.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.x_lm741.qx X_U2.x_lm741.qx 
+               NPN             NPN             
+       LEVEL    1               1            
+          IS  800.000000E-18  800.000000E-18 
+          BF   93.75           93.75         
+          NF    1               1            
+          BR    1               1            
+          NR    1               1            
+         ISS    0               0            
+          RE    0               0            
+          RC    0               0            
+         CJE    0               0            
+         VJE     .75             .75         
+         CJC    0               0            
+         VJC     .75             .75         
+         MJC     .33             .33         
+        XCJC    1               1            
+         CJS    0               0            
+         VJS     .75             .75         
+          KF    0               0            
+          AF    1               1            
+          CN    2.42            2.42         
+           D     .87             .87         
+
+
+**** 10/25/19 13:31:50 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Amp-Op- no inverso"  [ E:\PRACTICA SCR-TRIAC\Practica-PSpiceFiles\SCHEMATIC1\Amp-Op- no inverso.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N01395) 19.25E-06 (N01563)    0.0000 (N01638) 237.1E-06 (N02183)   15.0000     
+
+(N02217)  -15.0000 (N02970)    0.0000 (N02986) 237.1E-06 (N03126)   15.0000     
+
+(N03140)  -15.0000 (N03399) 19.25E-06 (X_U1.x_lm741.6)-24.03E-09                
+
+(X_U1.x_lm741.7) 242.0E-06            (X_U1.x_lm741.8) 242.0E-06                
+
+(X_U1.x_lm741.9)    0.0000            (X_U2.x_lm741.6)-24.10E-09                
+
+(X_U2.x_lm741.7) 242.0E-06            (X_U2.x_lm741.8) 242.0E-06                
+
+(X_U2.x_lm741.9)    0.0000            (X_U1.x_lm741.10)    -.6077               
+
+(X_U1.x_lm741.11)   14.9600           (X_U1.x_lm741.12)   14.9600               
+
+(X_U1.x_lm741.13)    -.5938           (X_U1.x_lm741.14)    -.5938               
+
+(X_U1.x_lm741.53)   14.0000           (X_U1.x_lm741.54)  -14.0000               
+
+(X_U1.x_lm741.90) 99.01E-06           (X_U1.x_lm741.91)   40.0000               
+
+(X_U1.x_lm741.92)  -40.0000           (X_U1.x_lm741.99)    0.0000               
+
+(X_U2.x_lm741.10)    -.6077           (X_U2.x_lm741.11)   14.9600               
+
+(X_U2.x_lm741.12)   14.9600           (X_U2.x_lm741.13)    -.5938               
+
+(X_U2.x_lm741.14)    -.5938           (X_U2.x_lm741.53)   14.0000               
+
+(X_U2.x_lm741.54)  -14.0000           (X_U2.x_lm741.90) 99.01E-06               
+
+(X_U2.x_lm741.91)   40.0000           (X_U2.x_lm741.92)  -40.0000               
+
+(X_U2.x_lm741.99)    0.0000           
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V3         1.667E-03
+    V_V4        -1.667E-03
+    V_V5         1.925E-08
+    V_V6        -7.972E-08
+    V_V7         1.667E-03
+    V_V8        -1.667E-03
+    X_U1.x_lm741.vb  -2.403E-13
+    X_U1.x_lm741.vc   1.400E-11
+    X_U1.x_lm741.ve   1.455E-11
+    X_U1.x_lm741.vlim   9.901E-08
+    X_U1.x_lm741.vlp  -4.000E-11
+    X_U1.x_lm741.vln  -4.000E-11
+    X_U2.x_lm741.vb  -2.410E-13
+    X_U2.x_lm741.vc   1.400E-11
+    X_U2.x_lm741.ve   1.455E-11
+    X_U2.x_lm741.vlim   9.901E-08
+    X_U2.x_lm741.vlp  -4.000E-11
+    X_U2.x_lm741.vln  -4.000E-11
+
+    TOTAL POWER DISSIPATION   1.00E-01  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/25/19 13:31:50 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Amp-Op- no inverso"  [ E:\PRACTICA SCR-TRIAC\Practica-PSpiceFiles\SCHEMATIC1\Amp-Op- no inverso.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .09
+

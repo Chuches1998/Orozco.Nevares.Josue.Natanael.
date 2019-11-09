@@ -1,0 +1,106 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\begin{document}
+\title{\textbf{Sistemas electronicos de interfaz\\EV 2.5. Arreglos de amplificadores de potencia\\Practica 6}}
+\author{Josue Natanael Orozco Nevares 18311797\\Angel Eraclio Briano Garcia 18311625\\Ing. Mecatronica\\Grado 4B}
+\date{8 de noviembre del 2019}
+\maketitle
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=10cm]{UPCDLZMDG5783-logo.png} 
+\end{figure}
+\newpage
+
+\section{Introducciòn}
+En esta practica conoceremos como es que funcionan los arreglos operacionales por medio de las simulaciones que se tiene que realizar.
+
+\section{Objetivo}
+Realizar las simulaciones correctamente y contestar lo que se te pida, en este caso es obtener la ganancia de cada tipo de circuito simulado las cuales son: \\• Inversor\\• No inversor\\• Sumador\\• Restador\\• Sumador restador
+
+\section{Materiales}
+• Laptop\\• Simulador de circuitos OrCAD
+
+\section{Desarrollo}
+\textbf{1-} Comenzaremos abriendo nuestro simulador para armar el primero de los circuitos el cual se trata de el \textbf{Inversor} y en este caso se representa en el siguiente circuito.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+Cuando se tenga el circuito comenzaremos a simularlo para ver el resultado de las ondas y asi poder calcular su ganancia con la siguiente formula R2/R1 y asì obtendremos nuestra ganancia la cual sera de 2.2.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+\textbf{2-} El siguiente circuito se trata de un \textbf{no inversor} y es representado por el siguiente circuito que se presenta a continuaciòn.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+Al igual que en el circuito pasado, tambien se colocaran las puntas de prueba en el mismo lugar, una en la entrada y otra en la salida, la manera de calcular la ganancia de un circuito \textbf{no inversor} es igual que la manera del \textbf{inversor} pero solo se le agrega un 1 a la formula y quedaria de la siguiente manera: R2/R1+1 y asi obtendremos la ganancia.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+\textbf{3-} El siguiente circuito es un \textbf{sumador} y el circuito simulado queda de la siguiente manera.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+Comenzaremos la simulaciòn para colocar nuestras puntas de prueba y asi lograr obtener las señales, la manera para obtener la ganancia de este circuito es algo mas compleja que las dos anteriores que ya vimos y se representa de la siguiente manera (V Rf/R1 + V Rf/R2 + V Rf/R3) para obtener asi la ganancia de este circuito \textbf{sumador}.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+
+\textbf{4-} Este circuito se trata de un \textbf{restador} el cual se le asemeja en lo complejo del càlculo para obtener la ganancia y el circuito es el siguiente.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+Para ver las señales de entrada y de salida colocaremos las puntas como lo hemos estado haciendo para asi poder lograr obtener nuestra ganancia de manera visual y la manera de calcular la ganancia es (1 + Rf/R1)((Rx/R2+Rx)(V2-Rf/R1+Rf) (V1)) a pesar de que la formula es algo laboriosa en realidad funciona.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+\textbf{5-} El ultimo circuito se trata de un \textbf{sumador restador} y es el ultimo de los circuitos de esta practica ademas de ser el mas laborioso al momento de armarlo y la simulaciòn es la siguiente.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+En este circuito haremos un pequeño cambio al momento de colocar nuestras puntas ya que deberemos de colocar 3, dos en dos entradas distintas y una en la salida del amplificador como lo hemos estado haciendo en las demas practicas para poder ver asi nuestro resultado final.
+
+\begin{figure}
+\centering
+
+\end{figure}
+
+\section{Conclusiòn}
+Quedo claro que la ganancia obtenida en cualquiera de los circuitos que realizamos aquì hace referencia muy clara a las señales electricas que estos emiten y esta se obtiene por medio de los amplificadores operacionales ademas de que la ganancia unicamente se puede llegar a detectar ya sea midiendola o calculandola por medio de las entradas y las salidas y estas frecuencias o se resultados se miden en belios o decibelios los cuales uno los asemeja a cuestiones sonoras, pero tambien se utilizan para la tensiòn o la potencia elèctrica.
+
+\end{document}

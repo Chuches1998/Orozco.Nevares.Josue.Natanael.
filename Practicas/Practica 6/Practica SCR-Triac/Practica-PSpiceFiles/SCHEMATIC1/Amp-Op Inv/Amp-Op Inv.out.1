@@ -1,0 +1,43 @@
+
+**** 10/25/19 12:21:22 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Amp-Op Inv"  [ E:\PRACTICA SCR-TRIAC\Practica-PSpiceFiles\SCHEMATIC1\Amp-Op Inv.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Amp-Op Inv.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 40m 0 50u 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source PRACTICA
+X_U1         0 N01395 V+ V- 0 LM741
+R_R1         N01563 N01395  2.2k TC=0,0 
+R_R2         N01395 0  1k TC=0,0 
+V_V1         N01563 0 15
+V_V2         0 0 15
+
+**** RESUMING "Amp-Op Inv.cir" ****
+.END
+
+ERROR(ORPSIM-15143): Voltage source and/or inductor loop involving V_V2. You may break the loop by adding a series resistance
+
